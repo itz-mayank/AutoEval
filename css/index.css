@@ -1,0 +1,422 @@
+/* ------------------------------------ Click on login and Sign Up to  changue and view the effect
+---------------------------------------
+*/
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
+background: #cfd8dc; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #cfd8dc 0%, #607d8b 100%, #b0bec5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #cfd8dc 0%,#607d8b 100%,#b0bec5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #cfd8dc 0%,#607d8b 100%,#b0bec5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.center_box {
+  position: relative;
+  float: left;
+   width: 100%;
+}
+
+.middle_box {
+  position: relative;
+  width: 640px;
+left: 50%;
+margin-left: -320px;
+}
+
+.back_box {
+position: relative;
+  float: left;
+  width: 640px;
+  height: 280px;
+overflow: hidden;
+  background-color: #fff;
+  margin-top: 100px;
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.form_open {
+  position: absolute;
+  overflow: hidden;
+  top:100px;
+left: 0px;
+  width: 320px;
+  height: 280px;
+  background-color: #eee;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.form_active_tl {
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 440px;
+top:20px;
+left: 0px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+
+}
+
+.form_active_sl {
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 440px;
+top:20px;
+left:320px;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.cont_img_back_grey {
+  position: absolute;
+  width: 950px;
+top:-80px;
+  left: -116px;
+}
+
+.cont_img_back_grey > img {
+width: 100%;
+opacity: 0.3;
+animation-name: animar_fondo;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.form_img_back {
+  position: absolute;
+  width: 950px;
+top:-80px;
+  left: -116px;
+}
+
+.form_img_back > img {
+  width: 100%;
+opacity: 0.3;
+animation-name: animar_fondo;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.form_active_tl > .form_img_back {
+top:0px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.form_active_sl > .form_img_back {
+top:0px;
+left: -435px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+
+.sl_tl_box {
+position: absolute;
+  width: 640px;
+  height: 280px;
+  top: 100px;
+z-index: 1;
+}
+
+.big_box_tl {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.big_box_tl > h2 {
+  font-weight: 400;
+margin-top: 70px;
+    color: #757575;
+}
+
+.big_box_tl > p {
+ font-weight: 400;
+margin-top: 15px;
+width: 80%;
+    color: #37474F;
+}
+
+.btn_tl {
+background-color: #26C6DA;
+  border: none;
+  padding: 10px;
+width: 200px;
+border-radius:3px;
+box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #fff;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.big_box_sl {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.small_grey_bg > h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.small_grey_bg > p {
+ font-weight: 400;
+margin-top: 15px;
+ color: #fff;
+}
+/* ----------------------------------
+background text
+------------------------------------
+ */
+.small_grey_bg {
+  position: relative;
+  background-color: rgba(120, 144, 156, 0.55);
+  width: 80%;
+  border-radius:3px ;
+margin-top: 60px;
+padding: 15px 0px;
+}
+
+.btn_sl {
+background-color: #ef5350;
+  border: none;
+  padding: 10px;
+width: 200px;
+border-radius:3px;
+box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #fff;
+margin-top: 10px;
+cursor: pointer;
+}
+.form_active_sl {
+z-index: 2;
+}
+
+
+@-webkit-keyframes animar_fondo {
+  from { -webkit-transform: scale(1) translate(0px);
+-moz-transform: scale(1) translate(0px);
+-ms-transform: scale(1) translate(0px);
+-o-transform: scale(1) translate(0px);
+transform: scale(1) translate(0px); }
+  to { -webkit-transform: scale(1.5) translate(50px);
+-moz-transform: scale(1.5) translate(50px);
+-ms-transform: scale(1.5) translate(50px);
+-o-transform: scale(1.5) translate(50px);
+transform: scale(1.5) translate(50px); }
+}
+@-o-keyframes identifier {
+  from { -webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1); }
+  to { -webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5); }
+
+}
+@-moz-keyframes identifier {
+  from { -webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1); }
+  to { -webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5); }
+
+}
+@keyframes identifier {
+  from { -webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1); }
+  to { -webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5); }
+}
+.form_open_tl {
+  position: absolute;
+  opacity: 0;
+display: none;
+  width: 320px;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.form_active_tl {
+z-index: 2;
+}
+.form_active_tl  >.form_open_tl {
+}
+
+.form_open_sl {
+  position: absolute;
+  width: 320px;
+float: left;
+  opacity: 0;
+display: none;
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+
+.form_open_sl > input {
+text-align: left;
+  padding: 15px 5px;
+margin-left: 10px;
+margin-top: 20px;
+  width: 260px;
+border: none;
+    color: #757575;
+}
+
+.form_open_sl > h2 {
+  margin-top: 55px;
+  font-weight: 400;
+  font-size: 25px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.form_open_tl > input {
+  padding: 15px 5px;
+margin-left: 10px;
+margin-top: 20px;
+  width: 260px;
+border: none;
+text-align: left;
+  color: #757575;
+}
+
+.form_open_tl > h2 {
+margin-top: 55px;
+font-weight: 400;
+font-size: 25px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+.form_open_tl > a,.form_open_sl > a  {
+  color: #757575;
+    position: relative;
+    float: left;
+    margin: 10px;
+margin-left: 30px;
+}
+
+.google_cont_btn{
+  display: block;
+    border-radius: 100px;
+    border-width: 2px;
+    color: #505050;
+    font-weight: 700;
+    height: auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    min-height: 56px;
+    background-color: #fff;
+}
+
+.g-sign-in-button {
+  margin: 10px;
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+}
+
+.g-sign-in-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+
+.g-sign-in-button:active {
+  background-color: #3367D6;
+  transition: background-color 0.2s;
+}
+
+.g-sign-in-button .content-wrapper {
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.g-sign-in-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.g-sign-in-button .logo-wrapper {
+  padding: 11px;
+  background: #f2f2f2;
+  width: 40px;
+  height: 100%;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.g-sign-in-button .text-container {
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: .21px;
+  font-size: 13px;
+  line-height: 40px;
+  vertical-align: top;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  width: 170px;
+}
